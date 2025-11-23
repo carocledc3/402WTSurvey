@@ -31,13 +31,13 @@
     </p>
 
     <form id="survey-form">
-        <label id="label-name" for="name"><b>Full Name / Lurodresimi</b></label><br>
+        <label id="name-label" for="name"><b>Full Name / Lurodresimi</b></label><br>
         <input id="name" type="text" placeholder="Full Government Name" required><br><br>
 
-        <label id="label-email" for="email"><b>Address / Cibilo E-mail</b></label><br>
-        <input id="email" type="text" placeholder="expl@s.usev.edu.sd" required><br><br>
+        <label id="email-label" for="email"><b>Address / Cibilo E-mail</b></label><br>
+        <input id="email" type="email" placeholder="expl@s.usev.edu.sd" required><br><br>
 
-        <label id="label-number" for="number"><b>Student ID Number / Rindo Id. Gacséres</b></label><br>
+        <label id="number-label" for="number"><b>Student ID Number / Rindo Id. Gacséres</b></label><br>
         <input id="number" type="number" placeholder="ID Number" min=2000000 max=2999999 required><br><br>
 
         <label id="label-dropdown" for="dropdown"><b>Preferred Team / Ecip Ivvirod</b></label><br>
@@ -70,7 +70,7 @@
         </b><br>
         <textarea id="reason"></textarea><br><br>
 
-        <input type="submit" value="Submit / Invia">
+        <input type="submit" id="submit" value="Submit / Invia">
         
     </form>
 </body>
