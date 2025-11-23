@@ -10,30 +10,68 @@
             color: #363a4f;
         }
 
+        input[type="text"], input[type="number"] {
+            width: 200px
+        }
+
         html {
-            height: 100vh;
             background: linear-gradient(white, #DBDEFC);
+            background-attachment: fixed;
         }
     </style>
 </head>
 
 <body>
 
-    <h1 id="title">Sample Survey Form</h1>
+    <h1 id="title">Ethics Debate Signups</h1>
     <p id="description">
-        This is a description of a survey form.
+        This is the official signup form for the Ethics Debate of the College of Computing Sciences, University of Sevdenia—Medleshire, that will happen at Room A406 on 15 March 2037, starting at 09:00AM.<br><br>
+
+        Śti an calvorme iśansludi ovicial lo Isdaŋte Edicit Collegis Agáimit Ricnállit, Arhanagion Séudenias—Medéilsvale, id naham sa Cuidi A406 tam 15d Marses ińlas 2037, utci 18ś00.
     </p>
 
     <form id="survey-form">
-        <input id="name" type="text" placeholder="Name" required>
-        <label id="label-name" for="name">Name</label><br>
+        <label id="label-name" for="name"><b>Full Name / Lurodresimi</b></label><br>
+        <input id="name" type="text" placeholder="Full Government Name" required><br><br>
+
+        <label id="label-email" for="email"><b>Address / Cibilo E-mail</b></label><br>
+        <input id="email" type="text" placeholder="expl@s.usev.edu.sd" required><br><br>
+
+        <label id="label-number" for="number"><b>Student ID Number / Rindo Id. Gacséres</b></label><br>
+        <input id="number" type="number" placeholder="ID Number" min=2000000 max=2999999 required><br><br>
+
+        <label id="label-dropdown" for="dropdown"><b>Preferred Team / Ecip Ivvirod</b></label><br>
+        <select id="dropdown">
+            <option>Red Team / Ecip Corge</option>
+            <option>Blue Team / Ecip Śiń</option>
+            <option>Yellow Team / Ecip Relie</option>
+            <option>Green Team / Ecip Aéga</option>
+        </select><br><br>
+
+        <b>Preferred Side / Póc Ivvirod:</b><br>
+        <input type="radio" id="radio-gov" name="prefside" value="gov">
+        <label for="radio-gov">Government / Lurodre</label><br>
+        <input type="radio" id="radiooppv" name="prefside" value="opp">
+        <label for="radio-opp">Opposition / Némcisio</label><br><br>
         
-        <input id="email" type="text" placeholder="E-mail address" required>
-        <label id="label-email" for="email">E-mail</label><br>
+        <b>Preferred Sides / Imbócat Ivvirodat:</b><br>
+        <input type="checkbox" id="check-burger" name="prefsides" value="burger">
+        <label for="checkbox">Burger</label><br>
+        <input type="checkbox" id="check-fries" name="prefsides" value="fries">
+        <label for="checkbox">Fries</label><br>
+        <input type="checkbox" id="check-pout" name="prefsides" value="pout">
+        <label for="checkbox">Poutine</label><br><br>
 
-        <input id="number" type="number" placeholder="E-mail address" required>
-        <label id="label-number" for="number">Number</label><br>
+        <b>Why do you want to join this debate?<br>Ivsludi ti ciol o isdaŋte śti?</b><br>
+        <textarea id="reason"></textarea><br><br>
 
+        <b>What past experience do you have in debating, if any?<br>
+        Yn ti ot hibéuret cint sa isdaŋtio, sli hyim?
+        </b><br>
+        <textarea id="reason"></textarea><br><br>
+
+        <input type="submit" value="Submit / Invia">
+        
     </form>
 </body>
 
